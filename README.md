@@ -1,5 +1,6 @@
 # Pokemon-Legends-Z-A-Tools
 in progress.....
+* I am currently analyzing the data.trpfs file and partially working on a tool to extract the file
 
 1. [NSP Files](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools/edit/main/README.md#nsp-files)
 2. [NCA Files](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools/edit/main/README.md#nca-files)
