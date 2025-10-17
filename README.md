@@ -1,8 +1,8 @@
 # Pokemon-Legends-Z-A-Tools
 in progress.....
 
-1. NSP Files
-
+1. [NSP Files](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools/edit/main/README.md#nsp-files)
+2. [NCA Files](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools/edit/main/README.md#nca-files)
 
 
 # **NSP Files**
@@ -99,3 +99,15 @@ Now we can locate the data for the first file in the container.
 *   **Location within the PFS0 file:**
     *   **Start:** `0x19C + 0x0 = 0x19C`
     *   **End:** `0x19C + 0x6A3 = 0x83F`
+
+
+## 5. unpack
+
+Use `nsp_unpack.py`
+
+
+# NCA Files
+
+## 1. Unpack
+
+Use `nca_unpack.py`
