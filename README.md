@@ -4,6 +4,7 @@ in progress.....
 
 1. [NSP Files](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools?tab=readme-ov-file#nsp-files)
 2. [NCA Files](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools?tab=readme-ov-file#nca-files)
+3. [TRPFS/TRPFD](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools?tab=readme-ov-file#trpfstrpfd)
 
 
 # **NSP Files**
@@ -106,9 +107,39 @@ Now we can locate the data for the first file in the container.
 
 Use `nsp_unpack.py`
 
+`python nsp_unpack.py`
+
 
 # NCA Files
 
 ## 1. Unpack
 
 Use `nca_unpack.py`
+
+`python nca_unpack.py`
+
+
+# TRPFS/TRPFD
+
+The extraction process relies on two key files working together:
+
+1.  **`data.trpfd` (The Name Index):** This file acts as a "table of contents" for the entire game's data. Its primary role is to provide a comprehensive list of all pack file paths (e.g., `arc/ai_influence/.../file.trpak`). The script reads these names and calculates a 64-bit FNV-1a hash for each one. This hash is the unique key used to locate the pack's data.
+
+2.  **`data.trpfs` (The Data Store):** This is a giant, monolithic warehouse for all game data. It is a `ONEPACK` archive. Its header contains a crucial map that links the **FNV-1a hash** of a pack's name to the absolute **starting offset** of that pack's data within the `.trpfs` file.
+
+### The "Slicing" Logic
+
+The script combines the information from these two files to create a complete map of the data archive:
+
+1.  It parses `.trpfd` to generate a list of all pack names and their corresponding hashes.
+2.  It parses `.trpfs` to build a dictionary mapping every known pack hash to its starting offset.
+3.  It creates a master list of all packs, each with its name and confirmed starting address.
+4.  **Crucially, this master list is then sorted by the starting address.**
+5.  By sorting the list, the size of each pack can be determined with 100% accuracy: the size of `pack[i]` is simply the starting address of `pack[i+1]` minus the starting address of `pack[i]`.
+6.  The script then iterates through this sorted map and "slices" the `data.trpfs` file, saving each piece under its original name and path.
+
+## Unpack
+
+Use `trpfs_unpack.py`
+
+`python trpfs_unpack.py`
