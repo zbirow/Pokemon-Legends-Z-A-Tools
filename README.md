@@ -143,6 +143,8 @@ Use `trpfs_unpack.py`
 
 `python trpfs_unpack.py`
 
+the program is not ready yet, it extracts files, but it does it incorrectly.
+
 ## Open
 
 To view the extracted files, download [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox).
