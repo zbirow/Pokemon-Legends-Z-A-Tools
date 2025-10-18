@@ -1,6 +1,5 @@
 # Pokemon-Legends-Z-A-Tools
 in progress.....
-* I am currently analyzing the data.trpfs file and partially working on a tool to extract the files
 
 1. [NSP Files](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools?tab=readme-ov-file#nsp-files)
 2. [NCA Files](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools?tab=readme-ov-file#nca-files)
@@ -143,3 +142,12 @@ The script combines the information from these two files to create a complete ma
 Use `trpfs_unpack.py`
 
 `python trpfs_unpack.py`
+
+## Open
+
+To view the extracted files, download [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox).
+
+Select the "Open Folder" option and select the directory with the extracted files. Currently, only bntx.trpak files can be viewed.
+
+![](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools/blob/main/switch_toolbox_bntx.png)
+
