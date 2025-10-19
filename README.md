@@ -155,3 +155,10 @@ Select the "Open Folder" option and select the directory with the extracted file
 
 ![](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools/blob/main/switch_toolbox_bntx.png)
 
+## File Types
+
+| Type | Function |
+| ---- | -------- |
+| bntx | Texture |
+| bfcpx | Font |
+
