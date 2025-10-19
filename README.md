@@ -5,6 +5,10 @@ in progress.....
 2. [NCA Files](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools?tab=readme-ov-file#nca-files)
 3. [TRPFS/TRPFD](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools?tab=readme-ov-file#trpfstrpfd)
 
+## Update
+
+**Now I will work on a tool to extract .trpak files** - 19 Oct.
+
 
 # **NSP Files**
 
@@ -138,7 +142,6 @@ The script combines the information from these two files to create a complete ma
 6.  The script then iterates through this sorted map and "slices" the `data.trpfs` file, saving each piece under its original name and path.
 
 ## Unpack
-### **The current program is a brute-force method. It's designed to better analyze the file structure. Once I finish the analysis, I'll provide a revised program for extracting the files. I'll also provide full file structure commentary.**
 
 Use `trpfs_unpack.py`
 
