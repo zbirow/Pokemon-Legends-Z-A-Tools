@@ -138,12 +138,11 @@ The script combines the information from these two files to create a complete ma
 6.  The script then iterates through this sorted map and "slices" the `data.trpfs` file, saving each piece under its original name and path.
 
 ## Unpack
+### **The current program is a brute-force method. It's designed to better analyze the file structure. Once I finish the analysis, I'll provide a revised program for extracting the files. I'll also provide full file structure commentary.**
 
 Use `trpfs_unpack.py`
 
 `python trpfs_unpack.py`
-
-the program is not ready yet, it extracts files, but it does it incorrectly.
 
 ## Open
 
