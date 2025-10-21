@@ -161,4 +161,10 @@ Select the "Open Folder" option and select the directory with the extracted file
 | ---- | -------- |
 | bntx | Texture |
 | bfcpx | Font |
+| bfotf | Font |
+| bnsh | Shader |
+| ptcl| effects(texture, 3d models, shaders)|
+| trsha | Shader |
+| trskl | Characters Texture |
+| trslp | Pokemon Texture |
 
