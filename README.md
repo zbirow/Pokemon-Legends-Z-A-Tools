@@ -151,7 +151,7 @@ Use `trpfs_unpack.py`
 
 To view the extracted files, download [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox).
 
-Select the "Open Folder" option and select the directory with the extracted files. Currently, only bntx.trpak files can be viewed.
+Select the "Open Folder" option and select the directory with the extracted files.
 
 ![](https://github.com/zbirow/Pokemon-Legends-Z-A-Tools/blob/main/switch_toolbox_bntx.png)
 
